@@ -8,4 +8,3 @@ This repository is designed for Python projects related to Machine Learning.
 
 ## Getting Started
 To get started with this project, clone the repository and navigate to the `python-for-ml` folder.
-ss
