@@ -6,7 +6,8 @@ from preprocessing import (
     handle_Null,
     handle_data_type,
     handle_outliers,
-    check_outliers
+    check_outliers,
+    Ratio
 )
 def main():
 
@@ -39,11 +40,13 @@ def main():
     handle_outliers(df)
 
     df.drop_duplicates(inplace=True)
-    print(df.duplicated().sum())
+    print(f"{df.duplicated().sum() }\n")
     ##print("\nOutliers after handling:")
     ##check_outliers(df)
 
-
+    print(Ratio(df))
+    print("\nThere is no nulls")
+    
     print("\nCleaned Data:")
     print(df.head())
 
