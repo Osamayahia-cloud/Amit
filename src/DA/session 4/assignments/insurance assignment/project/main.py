@@ -38,7 +38,8 @@ def main():
 
     handle_outliers(df)
 
-
+    df.drop_duplicates(inplace=True)
+    print(df.duplicated().sum())
     ##print("\nOutliers after handling:")
     ##check_outliers(df)
 
@@ -48,7 +49,7 @@ def main():
 
     print("\nFinal Shape:")
     print(df.shape)
-
+ 
 
 if __name__ == "__main__":
     main()
