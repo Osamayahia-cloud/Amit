@@ -1,0 +1,1 @@
+cols_drop = ['PassengerId','Name','Ticket']
